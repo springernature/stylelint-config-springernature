@@ -1,2 +1,2 @@
 # stylelint-config-springernature
-Stylelint shareable config used at Springer Nature
+[Stylelint](https://stylelint.io/) shareable config used at Springer Nature
