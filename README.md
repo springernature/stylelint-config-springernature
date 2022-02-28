@@ -1,5 +1,5 @@
 # stylelint-config-springernature
-[![NPM version](badge-npm)](info-npm)
+[![NPM version][badge-npm]][info-npm]
 [![MIT licensed][badge-license]][info-license]
 
 [Stylelint](https://stylelint.io/) shareable config used at Springer Nature for linting `sass` using the `scss` syntax.
