@@ -47,7 +47,7 @@ The frontend-toolkits repository is licensed under the [MIT License][info-licens
 All packages within this repository are licensed under the [MIT License][info-license].    
 Copyright &copy; 2022, Springer Nature
 
-[info-license]: LICENCE
+[info-license]: LICENSE
 [badge-license]: https://img.shields.io/badge/license-MIT-blue.svg
 [info-npm]: https://www.npmjs.org/package/%40springernature%2Fstylelint-config
 [badge-npm]: http://img.shields.io/npm/v/%40springernature%2Fstylelint-config.svg

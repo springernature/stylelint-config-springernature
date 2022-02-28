@@ -1,6 +1,6 @@
 {
   "name": "@springernature/stylelint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Stylelint shareable config used at Springer Nature",
   "main": "config/.stylelintrc.json",
   "repository": {
