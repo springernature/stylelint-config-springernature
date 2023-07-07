@@ -25,6 +25,6 @@
   "homepage": "https://github.com/springernature/stylelint-config-springernature#readme",
   "dependencies": {
     "postcss-scss": "^4.0.3",
-    "stylelint": "^14.5.3"
+    "stylelint": "^15.10.1"
   }
 }
