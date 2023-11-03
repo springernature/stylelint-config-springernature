@@ -7,33 +7,80 @@
 ## Requirements
 
 This package requires:
-- `stylelint@^14.5.3`
-- `postcss-scss@^4.0.3`
+- `stylelint@^15.11.0`
 
 ## Installation
 
 1. Install `stylelint` and config to your devDependencies
+
 ```
 npm install --save-dev stylelint @springernature/stylelint-config
 ```
 
-2. Add the `stylelint` option to your `package.json` file, and point it to the shared `.stylelintrc.json`
+2. Create a file called .stylelintrc.json on your root folder.
+
+Inside the file add:
 
 ```json
 {
-  "name": "my-project",
-  "version": "1.0.0",
-  "stylelint": {
-    "extends": "./node_modules/@springernature/stylelint-config/config/.stylelintrc.json"
-  }
+    "extends": ["stylelint-config-springernature"]  
 }
 ```
+
+You can add more rules or plugins on this section following the [styleint config format](https://stylelint.io/user-guide/configure).
+
 
 4. Run `stylelint`, specifying the `scss` syntax
 
 ```
-stylelint './path/to/scss/*.scss' --custom-syntax postcss-scss
+stylelint './path/to/scss/*.scss'
 ```
+
+5. Run automatically fix issues
+
+```
+stylelint './path/to/scss/*.scss' --fix
+```
+
+
+6. Add `stylelint` scripts to your package.json
+
+```json
+    "stylelint": "stylelint '**/*.scss'",
+    "stylelint-fix": "stylelint '**/*.scss' --fix"
+
+```
+
+## Gulp
+
+If your project used Gulp to compile SCSS you can integrate the Stylelint using
+
+```
+npm install @adorade/gulp-stylelint -save-dev
+```
+
+and use a config similar to the following
+
+```js
+function stylelintTask() {
+	return gulp
+		.src('src/**/*.scss')
+		.pipe(gulpStylelint({
+			reporters: [
+				{ formatter: 'string', console: true }
+			]
+		}));
+}
+
+```
+
+## IDE Plugins
+
+One of the big advantages of Stylelint is that most of the major IDE's have a plugin that can help you write the code without the need to run Stylelint.
+
+- VScode has a very good plugin for Stylelint. The setup is not straight forward, but is simple if you follow [this article](https://kumardeepak.xyz/blog/stylelint-scss-and-visual-studio-code/).
+- Inteliji has also a plugin for [Stylelint](https://www.jetbrains.com/help/idea/using-stylelint-code-quality-tool.html#ws_stylelint_lint_your_code).
+
 
 ## Contributing
 
