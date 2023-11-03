@@ -6,10 +6,8 @@ module.exports = {
     ],
     extends: ["stylelint-config-standard", "stylelint-config-standard-scss"],
 	rules: {
-		"alpha-value-notation": "number",
         "at-rule-empty-line-before": [
-            "always",
-            {
+            "always",  {
                 "except": [
                     "after-same-name",
                     "inside-block"
@@ -63,7 +61,6 @@ module.exports = {
         ],
         "length-zero-no-unit": true,
         "max-nesting-depth": 3,
-        "max-empty-lines": 2,
         "media-feature-range-notation": "prefix",
         "no-descending-specificity": null,
         "number-no-trailing-zeros": true,
@@ -79,27 +76,13 @@ module.exports = {
             "declarations"
         ],
         "property-no-vendor-prefix": null,
-        "rule-empty-line-before": [
-            "always",
-            {
-                "except": [
-                    "first-nested",
-                    "inside-block-and-after-rule"
-                ],
-                "ignore": [
-                    "first-nested",
-                    "after-comment",
-                    "inside-block"
-                ]
-            }
-        ],
         "scss/at-else-closing-brace-newline-after": null,
         "scss/at-else-closing-brace-space-after": null,
         "scss/at-else-empty-line-before": null,
         "scss/at-if-closing-brace-newline-after": null,
         "scss/at-if-closing-brace-space-after": null,
         "scss/at-if-no-null": null,
-        "scss/at-import-no-partial-leading-underscore": true,
+        "scss/load-no-partial-leading-underscore": true,
         "scss/at-mixin-argumentless-call-parentheses": null,
         "scss/at-rule-conditional-no-parentheses": null,
         "scss/comment-no-empty": null,

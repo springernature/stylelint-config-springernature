@@ -1,8 +1,9 @@
 # stylelint-config-springernature
-[![NPM version][badge-npm]][info-npm]
 [![MIT licensed][badge-license]][info-license]
 
-[Stylelint](https://stylelint.io/) shareable config used at Springer Nature for linting `sass` using the `scss` syntax.
+[Stylelint Plugin](https://stylelint.io/) used at Springer Nature for linting `sass` using the `scss` syntax.
+
+This plugin extends standard stylelint configurations with rules used by SpringerNature. The benefits of using a Plugin instead of a common shared config, is that is possible to add extra rules and plugins per project basis as well as override existing rules.
 
 ## Requirements
 
@@ -17,9 +18,9 @@ This package requires:
 npm install --save-dev stylelint @springernature/stylelint-config
 ```
 
-2. Create a file called .stylelintrc.json on your root folder.
+2. Create a file called .stylelintrc.json on your root folder. 
 
-Inside the file add:
+3. Inside the file add:
 
 ```json
 {
@@ -36,7 +37,7 @@ You can add more rules or plugins on this section following the [styleint config
 stylelint './path/to/scss/*.scss'
 ```
 
-5. Run automatically fix issues
+5. Run stylelint fixng issues automatically (not all are fixable).
 
 ```
 stylelint './path/to/scss/*.scss' --fix
