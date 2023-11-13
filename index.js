@@ -2,10 +2,11 @@
 
 module.exports = {
 	plugins: [
-        "stylelint-declaration-block-order"
+        "stylelint-order"
     ],
-    extends: ["stylelint-config-standard", "stylelint-config-standard-scss"],
+    extends: ["stylelint-config-recommended", "stylelint-config-standard", "stylelint-config-standard-scss"],
 	rules: {
+		"alpha-value-notation": null,	
         "at-rule-empty-line-before": [
             "always",  {
                 "except": [
@@ -64,7 +65,7 @@ module.exports = {
         "media-feature-range-notation": "prefix",
         "no-descending-specificity": null,
         "number-no-trailing-zeros": true,
-        "plugin/declaration-block-order": [
+        "order/order": [
             {
                 "type": "at-rule",
                 "name": "extend"
@@ -87,10 +88,10 @@ module.exports = {
         "scss/at-rule-conditional-no-parentheses": null,
         "scss/comment-no-empty": null,
         "scss/double-slash-comment-empty-line-before": null,
-        "scss/double-slash-comment-whitespace-inside": null,
-        "selector-attribute-operator-space-after": "never",
-        "selector-attribute-operator-space-before": "never",
-        "selector-attribute-quotes": null,
+		"scss/double-slash-comment-whitespace-inside": null,
+		"selector-attribute-operator-space-after": "never",
+		"selector-attribute-operator-space-before": "never",
+		"selector-attribute-quotes": null,
         "selector-class-pattern": null,
         "selector-list-comma-newline-after": "always",
         "selector-no-qualifying-type": [

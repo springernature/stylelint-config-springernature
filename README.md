@@ -3,7 +3,7 @@
 
 [Stylelint Plugin](https://stylelint.io/) used at Springer Nature for linting `sass` using the `scss` syntax.
 
-This plugin extends standard stylelint configurations with rules used by SpringerNature. The benefits of using a Plugin instead of a common shared config, is that is possible to add extra rules and plugins per project basis as well as override existing rules.
+This plugin extends standard stylelint configurations with rules used by SpringerNature.
 
 ## Requirements
 
@@ -18,17 +18,17 @@ This package requires:
 npm install --save-dev stylelint @springernature/stylelint-config
 ```
 
-2. Create a file called .stylelintrc.json on your root folder. 
+2. Create a file called `.stylelintrc.json` in your root folder. 
 
 3. Inside the file add:
 
 ```json
 {
-    "extends": ["stylelint-config-springernature"]  
+    "extends": ["@springernature/stylelint-config"]  
 }
 ```
 
-You can add more rules or plugins on this section following the [styleint config format](https://stylelint.io/user-guide/configure).
+You can add more rules or plugins in this section following the [styleint config format](https://stylelint.io/user-guide/configure).
 
 
 4. Run `stylelint`, specifying the `scss` syntax
@@ -37,7 +37,7 @@ You can add more rules or plugins on this section following the [styleint config
 stylelint './path/to/scss/*.scss'
 ```
 
-5. Run stylelint fixng issues automatically (not all are fixable).
+5. Run stylelint fixing issues automatically (not all are fixable).
 
 ```
 stylelint './path/to/scss/*.scss' --fix
@@ -54,7 +54,7 @@ stylelint './path/to/scss/*.scss' --fix
 
 ## Gulp
 
-If your project used Gulp to compile SCSS you can integrate the Stylelint using
+If your project used Gulp to compile SCSS you can integrate Stylelint using
 
 ```
 npm install @adorade/gulp-stylelint -save-dev

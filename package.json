@@ -1,15 +1,15 @@
 {
   "name": "stylelint-config-springernature",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "Springernature shareable config for Stylelint",
   "keywords": [
     "stylelint",
     "stylelint-config",
     "springernature"
   ],
-  "repository": "stylelint-config-springernature",
+  "repository": "springernature/stylelint-config-springernature",
   "license": "MIT",
-  "author": "Miguel",
+  "author": "Springer Nature",
   "main": "index.js",
   "files": [
     "index.js"
@@ -18,10 +18,9 @@
   "devDependencies": {
     "stylelint": "^15.10.0",
     "stylelint-config-recommended": "^13.0.0",
-    "stylelint-config-sass-guidelines": "^10.0.0",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-config-standard-scss": "^11.0.0",
-    "stylelint-declaration-block-order": "^0.2.0"
+    "stylelint-order": "^6.0.3"
   },
   "peerDependencies": {
     "stylelint": "^15.10.0"
