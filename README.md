@@ -28,7 +28,7 @@ npm install --save-dev stylelint @springernature/stylelint-config
 }
 ```
 
-You can add more rules or plugins in this section following the [styleint config format](https://stylelint.io/user-guide/configure).
+You can add more rules or plugins in this section following the [stylelint config format](https://stylelint.io/user-guide/configure).
 
 
 4. Run `stylelint`, specifying the `scss` syntax
@@ -79,8 +79,8 @@ function stylelintTask() {
 
 One of the big advantages of Stylelint is that most of the major IDE's have a plugin that can help you write the code without the need to run Stylelint.
 
-- VScode has a very good plugin for Stylelint. The setup is not straight forward, but is simple if you follow [this article](https://kumardeepak.xyz/blog/stylelint-scss-and-visual-studio-code/).
-- Inteliji has also a plugin for [Stylelint](https://www.jetbrains.com/help/idea/using-stylelint-code-quality-tool.html#ws_stylelint_lint_your_code).
+- VScode has a very good plugin for Stylelint. Follow the [instructions on this article](https://kumardeepak.xyz/blog/stylelint-scss-and-visual-studio-code/) to help set it up.
+- Inteliji also has a plugin for [Stylelint](https://www.jetbrains.com/help/idea/using-stylelint-code-quality-tool.html#ws_stylelint_lint_your_code).
 
 
 ## Contributing

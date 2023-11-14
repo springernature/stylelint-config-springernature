@@ -1,5 +1,5 @@
 {
-  "name": "stylelint-config-springernature",
+  "name": "@springernature/stylelint-config",
   "version": "0.1.0",
   "description": "Springernature shareable config for Stylelint",
   "keywords": [
