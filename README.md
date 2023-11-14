@@ -91,9 +91,9 @@ If we decide that we can't merge your PR or act on your issue, it's nothing pers
 
 ## License
 
-The frontend-toolkits repository is licensed under the [MIT License][info-license].    
+The @springernature/stylelint-config repository is licensed under the [MIT License][info-license].    
 All packages within this repository are licensed under the [MIT License][info-license].    
-Copyright &copy; 2022, Springer Nature
+Copyright &copy; 2023, Springer Nature
 
 [info-license]: LICENSE
 [badge-license]: https://img.shields.io/badge/license-MIT-blue.svg
