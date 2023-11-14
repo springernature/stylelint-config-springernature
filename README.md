@@ -91,7 +91,7 @@ If we decide that we can't merge your PR or act on your issue, it's nothing pers
 
 ## License
 
-The @springernature/stylelint-config repository is licensed under the [MIT License][info-license].    
+The stylelint-config-springernature repository is licensed under the [MIT License][info-license].    
 All packages within this repository are licensed under the [MIT License][info-license].    
 Copyright &copy; 2023, Springer Nature
 
