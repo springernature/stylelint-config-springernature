@@ -1,39 +1,87 @@
 # stylelint-config-springernature
-[![NPM version][badge-npm]][info-npm]
 [![MIT licensed][badge-license]][info-license]
 
-[Stylelint](https://stylelint.io/) shareable config used at Springer Nature for linting `sass` using the `scss` syntax.
+[Stylelint Plugin](https://stylelint.io/) used at Springer Nature for linting `sass` using the `scss` syntax.
+
+This plugin extends standard stylelint configurations with rules used by SpringerNature.
 
 ## Requirements
 
 This package requires:
-- `stylelint@^14.5.3`
-- `postcss-scss@^4.0.3`
+- `stylelint@^15.11.0`
 
 ## Installation
 
 1. Install `stylelint` and config to your devDependencies
+
 ```
 npm install --save-dev stylelint @springernature/stylelint-config
 ```
 
-2. Add the `stylelint` option to your `package.json` file, and point it to the shared `.stylelintrc.json`
+2. Create a file called `.stylelintrc.json` in your root folder. 
+
+3. Inside the file add:
 
 ```json
 {
-  "name": "my-project",
-  "version": "1.0.0",
-  "stylelint": {
-    "extends": "./node_modules/@springernature/stylelint-config/config/.stylelintrc.json"
-  }
+    "extends": ["@springernature/stylelint-config"]  
 }
 ```
+
+You can add more rules or plugins in this section following the [stylelint config format](https://stylelint.io/user-guide/configure).
+
 
 4. Run `stylelint`, specifying the `scss` syntax
 
 ```
-stylelint './path/to/scss/*.scss' --custom-syntax postcss-scss
+stylelint './path/to/scss/*.scss'
 ```
+
+5. Run stylelint fixing issues automatically (not all are fixable).
+
+```
+stylelint './path/to/scss/*.scss' --fix
+```
+
+
+6. Add `stylelint` scripts to your package.json
+
+```json
+    "stylelint": "stylelint '**/*.scss'",
+    "stylelint-fix": "stylelint '**/*.scss' --fix"
+
+```
+
+## Gulp
+
+If your project used Gulp to compile SCSS you can integrate Stylelint using
+
+```
+npm install @adorade/gulp-stylelint -save-dev
+```
+
+and use a config similar to the following
+
+```js
+function stylelintTask() {
+	return gulp
+		.src('src/**/*.scss')
+		.pipe(gulpStylelint({
+			reporters: [
+				{ formatter: 'string', console: true }
+			]
+		}));
+}
+
+```
+
+## IDE Plugins
+
+One of the big advantages of Stylelint is that most of the major IDE's have a plugin that can help you write the code without the need to run Stylelint.
+
+- VScode has a very good plugin for Stylelint. Follow the [instructions on this article](https://kumardeepak.xyz/blog/stylelint-scss-and-visual-studio-code/) to help set it up.
+- Inteliji also has a plugin for [Stylelint](https://www.jetbrains.com/help/idea/using-stylelint-code-quality-tool.html#ws_stylelint_lint_your_code).
+
 
 ## Contributing
 
@@ -43,9 +91,9 @@ If we decide that we can't merge your PR or act on your issue, it's nothing pers
 
 ## License
 
-The frontend-toolkits repository is licensed under the [MIT License][info-license].    
+The stylelint-config-springernature repository is licensed under the [MIT License][info-license].    
 All packages within this repository are licensed under the [MIT License][info-license].    
-Copyright &copy; 2022, Springer Nature
+Copyright &copy; 2023, Springer Nature
 
 [info-license]: LICENSE
 [badge-license]: https://img.shields.io/badge/license-MIT-blue.svg
