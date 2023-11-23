@@ -50,6 +50,9 @@ typings/
 # Optional npm cache directory
 .npm
 
+# NPM config for publication
+.npmrc
+
 # Optional eslint cache
 .eslintcache
 
