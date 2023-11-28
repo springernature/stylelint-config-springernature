@@ -4,13 +4,17 @@ module.exports = {
 	plugins: [
         "stylelint-order"
     ],
-    extends: ["stylelint-config-recommended", "stylelint-config-standard", "stylelint-config-standard-scss"],
+	extends: ["stylelint-config-recommended-scss"],
 	rules: {
-		"alpha-value-notation": null,	
+		// Turning off rules from stylelint-config-recommended-scss
+		"no-descending-specificity": null,
+		"scss/at-extend-no-missing-placeholder": null,
+		"no-duplicate-selectors": null,
+		"no-descending-specificity": null,
+		// Springer Nature Ruleset
         "at-rule-empty-line-before": [
             "always",  {
                 "except": [
-                    "after-same-name",
                     "inside-block"
                 ],
                 "ignore": [
@@ -41,7 +45,6 @@ module.exports = {
                 ]
             }
         ],
-        "declaration-empty-line-before": null,
         "font-family-name-quotes": "always-unless-keyword",
         "function-comma-space-after": "always",
         "function-name-case": "lower",
@@ -63,36 +66,17 @@ module.exports = {
         "length-zero-no-unit": true,
         "max-nesting-depth": 3,
         "media-feature-range-notation": "prefix",
-        "no-descending-specificity": null,
         "number-no-trailing-zeros": true,
         "order/order": [
             {
                 "type": "at-rule",
                 "name": "extend"
             },
-            {
-                "type": "at-rule",
-                "name": "include"
-            },
             "declarations"
         ],
-        "property-no-vendor-prefix": null,
-        "scss/at-else-closing-brace-newline-after": null,
-        "scss/at-else-closing-brace-space-after": null,
-        "scss/at-else-empty-line-before": null,
-        "scss/at-if-closing-brace-newline-after": null,
-        "scss/at-if-closing-brace-space-after": null,
-        "scss/at-if-no-null": null,
         "scss/load-no-partial-leading-underscore": true,
-        "scss/at-mixin-argumentless-call-parentheses": null,
-        "scss/at-rule-conditional-no-parentheses": null,
-        "scss/comment-no-empty": null,
-        "scss/double-slash-comment-empty-line-before": null,
-		"scss/double-slash-comment-whitespace-inside": null,
 		"selector-attribute-operator-space-after": "never",
 		"selector-attribute-operator-space-before": "never",
-		"selector-attribute-quotes": null,
-        "selector-class-pattern": null,
         "selector-list-comma-newline-after": "always",
         "selector-no-qualifying-type": [
             true,
@@ -101,15 +85,6 @@ module.exports = {
                     "attribute",
                     "class"
                 ]
-            }
-        ],
-        "selector-pseudo-element-colon-notation": "single",
-        "shorthand-property-no-redundant-values": true,
-        "string-no-newline": null,
-        "value-keyword-case": [
-            "lower",
-            {
-                "camelCaseSvgKeywords": true
             }
         ]
 	},
