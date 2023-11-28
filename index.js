@@ -8,9 +8,9 @@ module.exports = {
 	rules: {
 		// Turning off rules from stylelint-config-recommended-scss
 		"no-descending-specificity": null,
-		"scss/at-extend-no-missing-placeholder": null,
 		"no-duplicate-selectors": null,
 		"no-descending-specificity": null,
+		"scss/at-extend-no-missing-placeholder": null,
 		// Springer Nature Ruleset
         "at-rule-empty-line-before": [
             "always",  {
