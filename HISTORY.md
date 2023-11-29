@@ -5,7 +5,7 @@
     * Remove a couple of unnecesary plugins
     * Updated the rules to match the sass-lint rules.
 
-# 0.1.0 (2023-12-23)
+# 0.1.0 (2023-11-23)
     * Create the config for Styelint following the rules in the current SN sass-lint configuration.
     * Create the list of dependencies needed
     * Added plugins for CSS and SCSS
