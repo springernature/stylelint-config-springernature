@@ -80,7 +80,8 @@ function stylelintTask() {
 One of the big advantages of Stylelint is that most of the major IDE's have a plugin that can help you write the code without the need to run Stylelint.
 
 - VScode has a very good plugin for Stylelint. Follow the [instructions on this article](https://kumardeepak.xyz/blog/stylelint-scss-and-visual-studio-code/) to help set it up.
-- Inteliji also has a plugin for [Stylelint](https://www.jetbrains.com/help/idea/using-stylelint-code-quality-tool.html#ws_stylelint_lint_your_code).
+- Intellij also has a plugin for [Stylelint](https://www.jetbrains.com/help/idea/using-stylelint-code-quality-tool.html#ws_stylelint_lint_your_code).
+- SublimeText can use the [SublimeLinter-stylelint plugin](https://github.com/SublimeLinter/SublimeLinter-stylelint).
 
 
 ## Contributing
