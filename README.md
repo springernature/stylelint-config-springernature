@@ -57,7 +57,7 @@ stylelint './path/to/scss/*.scss' --fix
 If your project used Gulp to compile SCSS you can integrate Stylelint using
 
 ```
-npm install @adorade/gulp-stylelint -save-dev
+npm install @adorade/gulp-stylelint-esm -save-dev
 ```
 
 and use a config similar to the following
