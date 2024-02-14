@@ -57,12 +57,16 @@ stylelint './path/to/scss/*.scss' --fix
 If your project used Gulp to compile SCSS you can integrate Stylelint using
 
 ```
-npm install @adorade/gulp-stylelint -save-dev
+npm install @adorade/gulp-stylelint-esm -save-dev
 ```
 
-and use a config similar to the following
+Here are examples of an implementation:
 
+**ES6**
 ```js
+import {src} from 'gulp';
+import {gulpStylelint} from 'gulp-stylelint-esm';
+
 function stylelintTask() {
 	return gulp
 		.src('src/**/*.scss')
@@ -72,7 +76,26 @@ function stylelintTask() {
 			]
 		}));
 }
+```
 
+**CommonJS**
+```js
+const {src} = require('gulp');
+
+function lintScss(globs) {
+    return async () => {
+        const gStylelintEsm = await import('gulp-stylelint-esm');
+        return src(globs)
+            .pipe(gStylelintEsm.default({
+                reporters: [
+                    {formatter: 'string', console: true}
+                ]
+            }))
+            .on('error', (error) => {
+                console.error(error.toString())
+            })
+    };
+}
 ```
 
 ## IDE Plugins
