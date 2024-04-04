@@ -8,14 +8,14 @@ This plugin extends standard stylelint configurations with rules used by Springe
 ## Requirements
 
 This package requires:
-- `stylelint@^15.11.0`
+- `stylelint@^15.10.0`
 
 ## Installation
 
 1. Install `stylelint` and config to your devDependencies
 
 ```
-npm install --save-dev stylelint @springernature/stylelint-config
+npm install --save-dev stylelint@^15.10.0 @springernature/stylelint-config
 ```
 
 2. Create a file called `.stylelintrc.json` in your root folder. 
