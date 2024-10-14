@@ -16,12 +16,12 @@
   ],
   "scripts": {},
   "dependencies": {
-    "stylelint": "^15.10.0",
-    "stylelint-config-recommended-scss": "^13.1.0",
-    "stylelint-order": "^6.0.3"
+    "stylelint": "^16.10.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-order": "^6.0.4"
   },
   "peerDependencies": {
-    "stylelint": "^15.10.0"
+    "stylelint": "^16.10.0"
   },
   "engines": {
     "node": "^14.13.1 || >=16.0.0"
