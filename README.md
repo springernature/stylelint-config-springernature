@@ -5,6 +5,10 @@
 
 This plugin extends standard stylelint configurations with rules used by SpringerNature.
 
+> [!WARNING]  
+> This repository is deprecated after v1.0.0  
+> For the latest version of the config please visit the [frontend-tooling repository](https://github.com/springernature/frontend-tooling/tree/main/linting/stylelint)
+
 ## Requirements
 
 This package requires:
