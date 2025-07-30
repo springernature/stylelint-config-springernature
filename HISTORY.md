@@ -1,6 +1,6 @@
 # History
 
-# 1.0.0
+# 1.0.0 (2025-07-30)
     * Stable version of config
     * For use with older versions of Node
 
