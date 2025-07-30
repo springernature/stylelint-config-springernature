@@ -2,7 +2,7 @@
 
 # 1.0.0
     * Stable version of config
-	* For use with older versions of Node
+    * For use with older versions of Node
 
 # 0.1.1 (2023-11-28)
     * Move the dependencies needed to devDepencies
