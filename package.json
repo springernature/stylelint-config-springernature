@@ -1,30 +1,29 @@
 {
   "name": "@springernature/stylelint-config",
-  "version": "0.0.3",
-  "description": "Stylelint shareable config used at Springer Nature",
-  "main": "config/.stylelintrc.json",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/springernature/stylelint-config-springernature.git"
-  },
-  "author": "Alex Kilgour",
-  "license": "MIT",
+  "version": "0.1.1",
+  "description": "Springernature shareable config for Stylelint",
   "keywords": [
-    "springer nature",
-    "sass",
-    "scss",
     "stylelint",
-    "lint",
-    "linter",
-    "code style",
-    "static analysis"
+    "stylelint-config",
+    "springernature"
   ],
-  "bugs": {
-    "url": "https://github.com/springernature/stylelint-config-springernature/issues"
-  },
-  "homepage": "https://github.com/springernature/stylelint-config-springernature#readme",
+  "repository": "springernature/stylelint-config-springernature",
+  "license": "MIT",
+  "author": "Springer Nature",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {},
   "dependencies": {
-    "postcss-scss": "^4.0.3",
-    "stylelint": "^15.6.0"
+    "stylelint": "^15.10.0",
+    "stylelint-config-recommended-scss": "^13.1.0",
+    "stylelint-order": "^6.0.3"
+  },
+  "peerDependencies": {
+    "stylelint": "^15.10.0"
+  },
+  "engines": {
+    "node": "^14.13.1 || >=16.0.0"
   }
 }
